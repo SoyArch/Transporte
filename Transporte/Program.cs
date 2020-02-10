@@ -27,9 +27,11 @@ namespace Transporte
 
             foreach (var item in transportes)
             {
-                Console.Write("Soy un {0} con {1} pasajeros.", item.Tipo(), item.CantPasajeros());
+                Console.Write("Soy un {0} con {1} pasajeros.", item.Tipo, item.CantPasajeros);
 
                 Console.WriteLine("Prendo motor y {0}. Luego {1} y apago motor", item.Avanzar(), item.Detenerse());
+
+                item.Saludar();
 
                 Console.WriteLine("");
             }

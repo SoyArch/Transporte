@@ -19,15 +19,20 @@ namespace Transporte
         
         }
 
-        public int CantPasajeros() {
-
-            return cantPasajeros;
+        public string Tipo
+        {
+            get
+            {
+                return this.tipo;
+            }
         }
 
-        public string Tipo()
+        public int CantPasajeros
         {
-
-            return tipo;
+            get
+            {
+                return this.cantPasajeros;
+            }
         }
 
 
